@@ -28,3 +28,9 @@ tensorboard --logdir=logs    # 查看奖励等训练曲线
 python scripts/reinforcement_learning/rsl_rl/play.py --task=RobotLab-Isaac-Velocity-Rough-Unitree-Go2-v0  
 # 读取历史特定模型
 python scripts/reinforcement_learning/rsl_rl/play.py --task=RobotLab-Isaac-Velocity-Rough-Unitree-Go2-v0 --load_run 2026-03-24_14-30-00 --checkpoint model_100.pt
+
+
+
+# Isaaclab_Parkour 使用
+链接 https://github.com/CAI23sbP/Isaaclab_Parkour
+--num_envs=1024 # 原本为4096,为了缩短时间我改了   --max_iterations 10000   #原本为50000,我改了
