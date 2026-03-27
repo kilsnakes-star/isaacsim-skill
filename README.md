@@ -34,3 +34,7 @@ python scripts/reinforcement_learning/rsl_rl/play.py --task=RobotLab-Isaac-Veloc
 # Isaaclab_Parkour 使用
 链接 https://github.com/CAI23sbP/Isaaclab_Parkour
 --num_envs=1024 # 原本为4096,为了缩短时间我改了   --max_iterations 10000   #原本为50000,我改了
+
+#自动加载上一次训练保存的最新模型，从断点继续训练
+python scripts/rsl_rl/train.py --task Isaac-Extreme-Parkour-Teacher-Unitree-Go2-v0 --seed 1 --num_envs=1024 --max_iterations 10000 --headless --resume
+
