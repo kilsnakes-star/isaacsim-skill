@@ -38,3 +38,8 @@ python scripts/reinforcement_learning/rsl_rl/play.py --task=RobotLab-Isaac-Veloc
 #自动加载上一次训练保存的最新模型，从断点继续训练
 python scripts/rsl_rl/train.py --task Isaac-Extreme-Parkour-Teacher-Unitree-Go2-v0 --seed 1 --num_envs=1024 --max_iterations 10000 --headless --resume
 
+play教师模型
+python scripts/rsl_rl/play.py --task Isaac-Extreme-Parkour-Teacher-Unitree-Go2-Play-v0 --num_envs 16
+
+# 打开旧版vscode，才能连接3090服务器
+~/vscode-1.85/code
