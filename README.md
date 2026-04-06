@@ -43,3 +43,7 @@ python scripts/rsl_rl/play.py --task Isaac-Extreme-Parkour-Teacher-Unitree-Go2-P
 
 # 打开旧版vscode，才能连接3090服务器
 ~/vscode-1.85/code
+
+export WANDB_MODE=disabled        # 关闭wandb
+# nohup.......> train_log.txt 2>&1 &，在后台运行，关闭vscode也可云训练，xvfb-run -a 在云服务器启动，假装有显示器
+nohup xvfb-run -a python -u training/legged_gym/legged_gym/scripts/train.py --num_envs=4096 --headless > train_log.txt 2>&1 &
