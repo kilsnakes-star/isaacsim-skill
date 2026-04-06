@@ -51,3 +51,7 @@ nohup xvfb-run -a python -u training/legged_gym/legged_gym/scripts/train.py --nu
 
 # sea_nav 的play阶段  此时已经在play.py设置了args.headless = True  RECORD_VIDEO = True  自动录制视频
 xvfb-run -a python training/legged_gym/legged_gym/scripts/play.py
+
+# 把录制的视频传到本地的当前文件夹
+(base) kil@WP:~/下载$ scp -P 30182 root@sc01-ssh.gpuhome.cc:/root/SEA-Nav-Code/training/legged_gym/logs/Go2_pos_rough/exported/test_20260406_075516.mp4 .
+
