@@ -54,4 +54,5 @@ xvfb-run -a python training/legged_gym/legged_gym/scripts/play.py
 
 # 把录制的视频传到本地的当前文件夹
 (base) kil@WP:~/下载$ scp -P 30182 root@sc01-ssh.gpuhome.cc:/root/SEA-Nav-Code/training/legged_gym/logs/Go2_pos_rough/exported/test_20260406_075516.mp4 .
+scp -P 30182 root@sc01-ssh.gpuhome.cc:/root/SEA-2.5d/training/legged_gym/logs/Go2_pos_rough/exported/test_20260407_054727.mp4 .
 
